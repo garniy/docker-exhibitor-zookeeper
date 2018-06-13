@@ -22,7 +22,7 @@ RUN curl -sL --retry 3 --insecure \
  && rm -rf $JAVA_HOME/man
 
 # ZOOKEEPER
-ENV ZOOKEEPER_VERSION=3.4.11
+ENV ZOOKEEPER_VERSION=3.4.12
 RUN curl -sL --retry 3 \
   "http://archive.apache.org/dist/zookeeper/zookeeper-${ZOOKEEPER_VERSION}/zookeeper-${ZOOKEEPER_VERSION}.tar.gz" \
   | gunzip \
